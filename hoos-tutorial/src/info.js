@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const info = () => {
+const Info = () => {
   const [name, setName] = useState("");
   const [nickname, setNickname] = useState("");
 
@@ -30,4 +30,4 @@ const info = () => {
   );
 };
 
-export default info;
+export default Info;
