@@ -1,12 +1,10 @@
 // import logo from "./logo.svg";
-import "./App.css";
+// import "./App.css";
 import React from "react";
-// import Info from "./Info.js";
-import Info2 from "./Info2.js";
-// import Counter2 from "./Counter2";
+import Average from "./Average";
 
 const App = () => {
-  return <Info2 />;
+  return <Average />;
 };
 
 export default App;
