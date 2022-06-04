@@ -9,7 +9,7 @@ const TodoInsert = () => {
     setValue(e.target.value);
   }, []);
 
-  console.log(onChange);
+  //console.log(onChange);
   return (
     <form className="TodoInsert">
       <input
