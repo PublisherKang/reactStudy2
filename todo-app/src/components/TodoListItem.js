@@ -22,4 +22,5 @@ const TodoListItem = ({ todo, onRemove, onToggle }) => {
   );
 };
 
+// React.memo 리랜더링하지 않음 = 최적화
 export default React.memo(TodoListItem);
