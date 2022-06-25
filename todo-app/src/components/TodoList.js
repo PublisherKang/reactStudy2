@@ -17,4 +17,5 @@ const TodoList = ({ todos, onRemove, onToggle }) => {
   );
 };
 
-export default TodoList;
+export default React.memo(TodoList);
+//react memo 컴포넌트 최적화
