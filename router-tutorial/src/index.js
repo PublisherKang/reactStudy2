@@ -11,3 +11,9 @@ ReactDOM.render(
 
   document.getElementById("root")
 );
+
+/*
+
+ReactDom.render는 리액트 18버전 부터 미지원
+
+*/
