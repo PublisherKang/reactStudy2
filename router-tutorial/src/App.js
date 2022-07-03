@@ -11,6 +11,7 @@ const App = () => {
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Home />} />
+        {/* index는 path="/" 와 동일한 의미를 가짐 */}
         <Route path="/about" element={<About />} />
         <Route path="/Profile/:usename" element={<Profile />} />
       </Route>
