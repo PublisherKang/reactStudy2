@@ -4,41 +4,33 @@ import { NavLink, Outlet } from "react-router-dom";
 //리액트라우터 NavLink와 내장 isActive 클래스 이름 사용하기
 
 const Articles = () => {
+  return (
+    <div>
+      <Outlet />
+      <ul>
+        <ArticleItem id={1} />
+        <ArticleItem id={2} />
+        <ArticleItem id={3} />
+      </ul>
+    </div>
+  );
+};
+
+const ArticleItem = ({ id }) => {
   const activeStyle = {
     color: "green",
     fontSize: 21,
   };
 
   return (
-    <div>
-      <Outlet />
-      <ul>
-        <li>
-          <NavLink
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-            to="/articles/1"
-          >
-            게시글 1
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-            to="/articles/2"
-          >
-            게시글 2
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-            to="/articles/3"
-          >
-            게시글 3
-          </NavLink>
-        </li>
-      </ul>
-    </div>
+    <li>
+      <NavLink
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        to={`article${id}`}
+      >
+        게시글 {id}
+      </NavLink>
+    </li>
   );
 };
 
