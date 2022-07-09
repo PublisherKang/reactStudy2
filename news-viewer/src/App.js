@@ -3,12 +3,14 @@ import axiox from 'axios';
 
 const App = () => {
   const [data, setData] = useState(null);
-  const onClick = () => {
-    axiox.get('https://jsonplaceholder.typicode.com/todos/1').then((response) => {
+  const onClick = async () => {
+    try {
+      const response = await axiox.get('https://jsonplaceholder.typicode.com/todos/1');
       setData(response.data);
-    });
+    } catch (e) {
+      console.log(e);
+    }
   };
-
   return (
     <div>
       <div>
