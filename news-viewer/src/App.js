@@ -5,7 +5,7 @@ const App = () => {
   const [data, setData] = useState(null);
   const onClick = async () => {
     try {
-      const response = await axiox.get('https://jsonplaceholder.typicode.com/todos/1');
+      const response = await axiox.get('https://newsapi.org/v2/top-headlines?country=kr&apiKey=bbe9b029ef2b4d12b2d5d1316353d975');
       setData(response.data);
     } catch (e) {
       console.log(e);
@@ -22,3 +22,5 @@ const App = () => {
 };
 
 export default App;
+
+//bbe9b029ef2b4d12b2d5d1316353d975 new key
