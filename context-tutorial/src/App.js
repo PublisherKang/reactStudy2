@@ -9,6 +9,10 @@ const App = () => {
         <ColorBox />
       </div>
     </ColorContext.Provider>
+
+    // <div>
+    //   <ColorBox />
+    // </div>
   );
 };
 
