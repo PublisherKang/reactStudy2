@@ -24,7 +24,7 @@ export const toggle = (id) => ({
   id,
 });
 
-export const rename = (id) => ({
+export const remove = (id) => ({
   type: REMOVE,
   id,
 });
