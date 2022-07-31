@@ -24,7 +24,6 @@ const Todos = ({
   const onChange = (e) => {
     onChangeInput(e.target.value);
   };
-
   return (
     <div>
       <form onSubmit={onSubmit}>
